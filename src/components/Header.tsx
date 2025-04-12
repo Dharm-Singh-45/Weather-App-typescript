@@ -1,7 +1,7 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
-import Logo from "../../public/logo.png";
-import Logo2 from "../../public/logo2.png";
+
+import Logo3 from '../../public/image.png';
 import { useTheme } from "@/context/theme-provider";
 import { Moon, Sun } from "lucide-react";
 import CitySearch from "./CitySearch";
@@ -15,9 +15,9 @@ const Header = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to={"/"}>
           <img
-            src={theme === "dark" ? Logo : Logo2}
+            src={theme === "dark" ? Logo3 : Logo3}
             alt="climate"
-            className="h-14"
+             className="h-14"
           />
         </Link>
         <div className="flex gap-4">
